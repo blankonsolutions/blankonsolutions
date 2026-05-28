@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLANKON SOLUTIONS | 대한민국 대표 IT 솔루션 기업</title>
     <meta name="description" content="블랭크온 솔루션즈는 공공기관과 민간 기업의 디지털 혁신을 선도하는 엔터프라이즈 IT 솔루션 및 GovTech 전문 기업입니다.">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
     <style>
         /* --- Color Palette & Variables --- */
         :root {
-            --primary-blue: #0056b3; 
-            --light-blue: #0099d8;   
-            --dark-blue: #002b5e;    
+            --primary-blue: #0056b3;
+            --light-blue: #0099d8;
+            --dark-blue: #002b5e;
             --text-main: #2c3e50;
             --text-muted: #546e7a;
             --bg-light: #f4f9f9;
@@ -27,9 +29,10 @@
         /* --- Reset & Base Styles --- */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 160px; /* 고정 헤더에 가려지지 않도록 패딩 추가 */
+            scroll-padding-top: 160px;
+            /* 고정 헤더에 가려지지 않도록 패딩 추가 */
         }
-        
+
         * {
             margin: 0;
             padding: 0;
@@ -106,11 +109,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 140px; /* 로고 확대에 맞춰 높이 대폭 증가 */
+            height: 140px;
+            /* 로고 확대에 맞춰 높이 대폭 증가 */
         }
 
         .logo img {
-            height: 120px; /* 3배 더 키움 */
+            height: 120px;
+            /* 3배 더 키움 */
             vertical-align: middle;
         }
 
@@ -200,13 +205,15 @@
         }
 
         .dropdown-content a::after {
-            display: none !important; /* 드롭다운 메뉴 항목의 밑줄 효과 제거 */
+            display: none !important;
+            /* 드롭다운 메뉴 항목의 밑줄 효과 제거 */
         }
 
         .dropdown-content a:hover {
             background-color: var(--bg-blue-light);
             color: var(--primary-blue) !important;
-            padding-left: 30px !important; /* 마우스 오버 시 약간 들어가는 효과 */
+            padding-left: 30px !important;
+            /* 마우스 오버 시 약간 들어가는 효과 */
         }
 
         /* --- Hero Slider Section --- */
@@ -215,7 +222,8 @@
             height: 100vh;
             min-height: 700px;
             overflow: hidden;
-            margin-top: 140px; /* offset header height */
+            margin-top: 140px;
+            /* offset header height */
         }
 
         .slide {
@@ -350,7 +358,8 @@
 
         /* CEO Message */
         .ceo-message {
-            background-color: var(--bg-blue-light); /* 강조된 백그라운드 */
+            background-color: var(--bg-blue-light);
+            /* 강조된 백그라운드 */
             border-radius: 24px;
             padding: 60px;
             display: flex;
@@ -361,9 +370,11 @@
         }
 
         .ceo-photo {
-            width: 320px; 
-            height: 460px; /* 허벅지/벨트까지 보이게 길이를 늘림 */
-            border-radius: 20px; /* 동그라미 대신 둥근 직사각형으로 변경하여 상반신 전체를 살림 */
+            width: 320px;
+            height: 460px;
+            /* 허벅지/벨트까지 보이게 길이를 늘림 */
+            border-radius: 20px;
+            /* 동그라미 대신 둥근 직사각형으로 변경하여 상반신 전체를 살림 */
             object-fit: cover;
             object-position: top center;
             box-shadow: var(--shadow-md);
@@ -372,14 +383,16 @@
         }
 
         .ceo-text h4 {
-            font-size: 2.2rem; /* 요청사항 반영: 글씨 확대 */
+            font-size: 2.2rem;
+            /* 요청사항 반영: 글씨 확대 */
             color: var(--primary-blue);
             margin-bottom: 15px;
             font-weight: 800;
         }
 
         .ceo-text blockquote {
-            font-size: 1.55rem; /* 요청사항 반영: 글씨 확대 */
+            font-size: 1.55rem;
+            /* 요청사항 반영: 글씨 확대 */
             color: var(--dark-blue);
             font-style: normal;
             font-weight: 700;
@@ -394,7 +407,8 @@
             color: var(--text-main);
             margin-bottom: 15px;
             word-break: keep-all;
-            font-size: 1.15rem; /* 요청사항 반영: 글씨 확대 */
+            font-size: 1.15rem;
+            /* 요청사항 반영: 글씨 확대 */
             line-height: 1.8;
         }
 
@@ -402,7 +416,8 @@
             font-weight: 800;
             color: var(--primary-blue);
             margin-top: 25px;
-            font-size: 1.35rem; /* 요청사항 반영: 글씨 확대 */
+            font-size: 1.35rem;
+            /* 요청사항 반영: 글씨 확대 */
         }
 
         /* --- Organization Chart --- */
@@ -471,8 +486,10 @@
         .service-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 5px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
             background: var(--gradient-primary);
             transform: scaleX(0);
             transform-origin: left;
@@ -523,7 +540,8 @@
         /* --- Products Section --- */
         .products {
             padding: 120px 0;
-            background-color: var(--bg-blue-light); /* 흰/파 느낌 적용 */
+            background-color: var(--bg-blue-light);
+            /* 흰/파 느낌 적용 */
             color: var(--dark-blue);
             position: relative;
             overflow: hidden;
@@ -532,8 +550,10 @@
         .products::before {
             content: '';
             position: absolute;
-            top: 0; right: 0;
-            width: 50%; height: 100%;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
             background: radial-gradient(circle at top right, rgba(0, 153, 216, 0.1), transparent 70%);
         }
 
@@ -623,14 +643,14 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .product-mockup img {
             width: 100%;
             max-width: 550px;
             border-radius: 20px;
             box-shadow: 0 30px 60px -15px rgba(0, 86, 179, 0.25);
             transition: transform 0.5s ease;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .product-mockup img:hover {
@@ -639,7 +659,8 @@
 
         /* --- Footer --- */
         footer {
-            background-color: var(--primary-blue); /* 흰파 느낌에 맞춰 푸른색 톤 적용 */
+            background-color: var(--primary-blue);
+            /* 흰파 느낌에 맞춰 푸른색 톤 적용 */
             color: rgba(255, 255, 255, 0.9);
             padding: 80px 0 40px;
         }
@@ -689,7 +710,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 40px;
-            border-top: 1px solid rgba(255,255,255,0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
             font-size: 0.95rem;
         }
 
@@ -704,15 +725,40 @@
         }
 
         @media screen and (max-width: 1024px) {
-            .about-grid, .product-showcase {
+            .about-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 40px;
+            }
+            .product-showcase {
+                flex-direction: column !important; /* flex 버그 수정: 세로 배치 강제 */
+                gap: 40px;
+                padding: 40px 30px;
+            }
+            .product-showcase:nth-of-type(even) {
+                flex-direction: column !important; /* 가로 반전된 요소도 모바일에선 일관되게 세로로 */
+            }
+            .product-info {
+                width: 100%;
+            }
+            .product-mockup {
+                width: 100%;
+                justify-content: center;
+            }
+            .product-mockup img {
+                max-width: 100%;
+                height: auto;
             }
             .ceo-message {
                 flex-direction: column;
                 text-align: center;
                 gap: 30px;
-                padding: 40px;
+                padding: 40px 24px;
+            }
+            .ceo-photo {
+                width: 260px;
+                height: auto;
+                aspect-ratio: 3/4;
+                margin: 0 auto;
             }
             .ceo-text blockquote {
                 border-left: none;
@@ -730,43 +776,168 @@
         }
 
         @media screen and (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+            
+            /* Header & Nav */
+            header {
+                border-bottom: 1px solid rgba(0, 86, 179, 0.15);
+            }
+            .nav-container {
+                height: 75px; /* 헤더 높이 축소 */
+                padding: 0 16px;
+            }
+            .logo img {
+                height: 55px; /* 로고 크기 축소 */
+            }
             .mobile-menu-btn {
                 display: block;
+                padding: 8px;
             }
             .nav-links {
                 position: fixed;
-                top: 140px;
+                top: 75px; /* 축소된 헤더 높이에 맞춤 */
                 left: -100%;
                 width: 100%;
-                height: calc(100vh - 140px);
+                height: calc(100vh - 75px);
                 background-color: var(--white);
                 flex-direction: column;
-                align-items: center;
-                padding-top: 40px;
+                align-items: stretch;
+                padding: 20px 24px;
+                gap: 10px;
+                overflow-y: auto;
                 transition: left 0.3s ease;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
             }
             .nav-links.active {
                 left: 0;
             }
+            .nav-links > li {
+                width: 100%;
+                border-bottom: 1px solid #f1f5f9;
+            }
+            .nav-links a {
+                display: block;
+                padding: 14px 0;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+            .nav-links a::after {
+                display: none; /* 모바일 밑줄 효과 제거 */
+            }
+            
+            /* Mobile Dropdown */
+            .dropdown:hover .dropdown-content {
+                display: none; /* 마우스 오버 시 뜨는 팝업 제거 */
+            }
+            .dropdown-content {
+                display: block;
+                visibility: visible;
+                opacity: 1;
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                background-color: #f8fafc;
+                padding: 5px 0 15px 15px;
+                margin-top: -5px;
+                border-radius: 8px;
+                width: 100%;
+            }
+            .dropdown-content a {
+                padding: 10px 15px !important;
+                font-size: 0.95rem !important;
+                color: var(--text-muted) !important;
+            }
+            .dropdown-content a:hover {
+                padding-left: 20px !important;
+                background-color: transparent;
+            }
+            .dropdown-content::before {
+                display: none;
+            }
+
+            /* Sections & Typography */
             .section-title {
                 font-size: 2rem;
             }
-            .slide-content h1 {
-                font-size: 2.5rem;
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2.5rem;
             }
-            .product-showcase {
-                padding: 40px 20px;
+            .about, .organization, .services, .products {
+                padding: 60px 0;
+            }
+
+            /* Hero Slider */
+            .hero-slider {
+                margin-top: 75px; /* 축소된 헤더에 맞춰 마진 축소 */
+                height: 70vh;
+                min-height: 480px;
+            }
+            .slide-content h1 {
+                font-size: 2rem;
+                line-height: 1.35;
+                margin-bottom: 16px;
+            }
+            .slide-content p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            .slider-controls {
+                bottom: 20px;
+            }
+
+            /* About CEO */
+            .about-grid {
+                margin-bottom: 40px;
+            }
+            .about-text h3 {
+                font-size: 1.8rem;
+                line-height: 1.35;
+            }
+            .ceo-text h4 {
+                font-size: 1.6rem;
+            }
+            .ceo-text blockquote {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+            .ceo-text p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            /* Organization Chart Mobile Optimization */
+            .org-chart {
+                margin-top: 20px;
             }
             .org-level::before, .org-level.multi::after, .org-level-item::before {
-                display: none; 
+                display: none !important; 
             }
             .org-chart-row {
                 flex-direction: column !important;
-                gap: 20px !important;
+                gap: 15px !important;
+                padding-top: 0 !important;
             }
             .org-chart-row > div {
                 width: 100% !important;
-                padding-top: 0 !important;
+                padding: 0 !important;
+                margin-top: 15px;
+                position: relative;
+            }
+            /* 부서 간 연결을 시각화하기 위해 중앙 도트선 추가 */
+            .org-chart-row > div::before {
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 50%;
+                width: 2px;
+                height: 15px;
+                background-color: var(--primary-blue);
+                transform: translateX(-50%);
             }
             .org-chart-row .horizontal-line, .org-chart-row .vertical-line, .vertical-line-ceo {
                 display: none !important;
@@ -775,28 +946,114 @@
                 flex-direction: column !important;
                 align-items: center !important;
                 gap: 15px !important;
+                width: 100%;
+            }
+            .ceo-row .org-node {
+                width: 100%;
+                max-width: 320px;
             }
             .audit-wrapper {
                 position: static !important;
                 transform: none !important;
-                margin-top: 0px !important;
+                margin-top: 10px !important;
                 justify-content: center !important;
+                width: 100%;
+            }
+            .audit-wrapper .org-node {
+                width: 100%;
+                max-width: 200px;
             }
             .audit-line {
                 display: none !important;
             }
-            .hero-slider {
-                min-height: 500px;
+            /* 부서 내부 팀 리스트 2열 그리드로 정렬하여 세로 높이 축소 */
+            .org-node div[style*="display: flex"] {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 6px !important;
+                padding: 12px 8px !important;
+            }
+            .org-node div[style*="display: flex"] span {
+                font-size: 0.85rem !important;
+                padding: 8px 4px !important;
+                margin: 0 !important;
+            }
+
+            /* Services */
+            .service-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .service-card {
+                padding: 30px 20px;
+            }
+            .service-icon {
+                margin-bottom: 16px;
+            }
+            .service-card h4 {
+                font-size: 1.25rem;
+                margin-bottom: 10px;
+            }
+            .service-card p {
+                font-size: 0.95rem;
+            }
+
+            /* Representative Product Showcase */
+            .product-showcase h3 {
+                font-size: 1.8rem;
+                margin-bottom: 16px;
+            }
+            .product-showcase p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .product-features li {
+                font-size: 0.95rem;
+                padding-left: 28px;
+            }
+            .product-features li::before {
+                width: 20px;
+                height: 20px;
+                font-size: 0.8rem;
+            }
+
+            /* Support notice list vertical layout */
+            #support-notice div[onmouseover] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                padding: 16px 20px !important;
+                gap: 10px !important;
+            }
+            #support-notice div[onmouseover] span[style*="background"] {
+                margin-right: 0 !important;
+                padding: 2px 8px !important;
+                font-size: 0.8rem !important;
+                display: inline-block;
+            }
+            #support-notice div[onmouseover] span[style*="color: #999"] {
+                align-self: flex-end;
+                font-size: 0.85rem !important;
+                margin-top: -5px;
+            }
+            
+            /* Footer */
+            footer {
+                padding: 40px 0 20px;
+            }
+            .footer-info p {
+                font-size: 0.95rem;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <a href="#"><img src="https://i.postimg.cc/MH4hPZyW/ci-imijipail-removebg-preview.png" alt="BLANKON SOLUTIONS 로고"></a>
+                <a href="#"><img src="https://i.postimg.cc/MH4hPZyW/ci-imijipail-removebg-preview.png"
+                        alt="BLANKON SOLUTIONS 로고"></a>
             </div>
             <button class="mobile-menu-btn" aria-label="메뉴 열기">☰</button>
             <nav>
@@ -871,7 +1128,7 @@
                     <p>대한민국 공공행정의 표준을 새롭게 정의합니다. 견고한 시스템과 혁신적인 기술력으로 스마트 행정의 미래를 엽니다.</p>
                 </div>
             </div>
-            
+
             <div class="slider-controls">
                 <div class="dot active"></div>
                 <div class="dot"></div>
@@ -886,12 +1143,14 @@
 
                 <div class="about-grid fade-up">
                     <div class="about-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="블랭크온 솔루션즈 오피스 전경">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
+                            alt="블랭크온 솔루션즈 오피스 전경">
                     </div>
                     <div class="about-text">
                         <h3>초연결 시대를 리드하는<br><span>글로벌 소프트웨어 리더</span></h3>
                         <p>블랭크온 솔루션즈는 대규모 트래픽 처리, 고도화된 AI 모델링, 강력한 보안 아키텍처 구축에 특화된 대한민국 최정상급 IT 전문 기업입니다.</p>
-                        <p>단순한 시스템 구축을 넘어 고객의 비즈니스 본질을 깊이 이해하고, 가장 진보된 기술로 시장의 패러다임을 바꾸는 솔루션을 제안합니다. 우리는 기술이 사람을 향할 때 비로소 진정한 혁신이 일어난다고 믿습니다.</p>
+                        <p>단순한 시스템 구축을 넘어 고객의 비즈니스 본질을 깊이 이해하고, 가장 진보된 기술로 시장의 패러다임을 바꾸는 솔루션을 제안합니다. 우리는 기술이 사람을 향할 때
+                            비로소 진정한 혁신이 일어난다고 믿습니다.</p>
                     </div>
                 </div>
 
@@ -903,7 +1162,8 @@
                         <!-- 요청사항 반영: 글씨 크기 확대 (CSS에서 제어) -->
                         <blockquote>"기술의 진보가 사회적 가치로 이어지도록, 가장 완벽한 IT 솔루션을 제공하겠습니다."</blockquote>
                         <p>안녕하십니까, 블랭크온 솔루션즈 대표이사입니다. 디지털 대전환의 시대, 소프트웨어는 더 이상 비즈니스의 도구가 아닌 핵심 경쟁력 그 자체입니다.</p>
-                        <p>우리는 설립 이래 공공과 민간을 아우르는 수많은 프로젝트를 성공적으로 완수하며 그 기술력을 입증해왔습니다. 앞으로도 안주하지 않고 AI, 빅데이터, 클라우드 등 첨단 IT 기술을 통해 고객의 가장 든든한 혁신 파트너가 될 것을 약속드립니다.</p>
+                        <p>우리는 설립 이래 공공과 민간을 아우르는 수많은 프로젝트를 성공적으로 완수하며 그 기술력을 입증해왔습니다. 앞으로도 안주하지 않고 AI, 빅데이터, 클라우드 등 첨단
+                            IT 기술을 통해 고객의 가장 든든한 혁신 파트너가 될 것을 약속드립니다.</p>
                         <p class="ceo-name">대표이사 김도영</p>
                     </div>
                 </div>
@@ -917,17 +1177,21 @@
                 <p class="section-subtitle fade-up">체계적이고 전문적인 조직 구성을 통해 최고의 IT 서비스를 제공합니다.</p>
 
                 <div class="org-chart fade-up" style="position: relative; max-width: 1200px; margin: 60px auto 0;">
-                    
+
                     <!-- Top Row: CEO -->
-                    <div class="ceo-row" style="display: flex; justify-content: center; position: relative; z-index: 10;">
+                    <div class="ceo-row"
+                        style="display: flex; justify-content: center; position: relative; z-index: 10;">
                         <!-- CEO -->
-                        <div class="org-node" style="background: var(--primary-blue); border-color: var(--primary-blue); min-width: 260px;">
+                        <div class="org-node"
+                            style="background: var(--primary-blue); border-color: var(--primary-blue); min-width: 260px;">
                             <h4 style="color: white; margin-bottom: 0; font-size: 1.5rem;">대표이사 (CEO)</h4>
                         </div>
-                        
+
                         <!-- Audit (Right side) -->
-                        <div class="audit-wrapper" style="position: absolute; left: 50%; top: 50%; transform: translate(130px, -50%); display: flex; align-items: center; z-index: 5;">
-                            <div class="audit-line" style="width: 40px; height: 2px; background: var(--primary-blue);"></div>
+                        <div class="audit-wrapper"
+                            style="position: absolute; left: 50%; top: 50%; transform: translate(130px, -50%); display: flex; align-items: center; z-index: 5;">
+                            <div class="audit-line" style="width: 40px; height: 2px; background: var(--primary-blue);">
+                            </div>
                             <div class="org-node" style="padding: 15px 25px; min-width: auto;">
                                 <h4 style="font-size: 1.15rem; margin-bottom: 0;">감사위원회</h4>
                             </div>
@@ -935,102 +1199,164 @@
                     </div>
 
                     <!-- Vertical Line -->
-                    <div class="vertical-line-ceo" style="width: 2px; height: 40px; background: var(--primary-blue); margin: 0 auto; z-index: 1; position: relative;"></div>
+                    <div class="vertical-line-ceo"
+                        style="width: 2px; height: 40px; background: var(--primary-blue); margin: 0 auto; z-index: 1; position: relative;">
+                    </div>
 
                     <!-- Departments Row -->
-                    <div class="org-chart-row" style="display: flex; justify-content: space-between; position: relative; padding-top: 30px;">
+                    <div class="org-chart-row"
+                        style="display: flex; justify-content: space-between; position: relative; padding-top: 30px;">
                         <!-- Top Horizontal Line (연결선) -->
-                        <div class="horizontal-line" style="position: absolute; top: 0; left: 8.333%; width: 83.333%; height: 2px; background: var(--primary-blue);"></div>
-                        
+                        <div class="horizontal-line"
+                            style="position: absolute; top: 0; left: 8.333%; width: 83.333%; height: 2px; background: var(--primary-blue);">
+                        </div>
+
                         <!-- Department 1 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">경영지원본부</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">
+                                        경영지원본부</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">재무팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">회계팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">인사팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">총무팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">재무팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">회계팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">인사팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">총무팀</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Department 2 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">사업기획/마케팅부</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">
+                                        사업기획/마케팅부</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">브랜드PR팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">대외협력팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">기획팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">콘텐츠마케팅팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">브랜드PR팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">대외협력팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">기획팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">콘텐츠마케팅팀</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Department 3 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">R&D 센터 (기술부)</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">R&D
+                                        센터 (기술부)</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">AI모델링팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">아키텍처팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">프론트엔드팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">백엔드팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">AI모델링팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">아키텍처팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">프론트엔드팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">백엔드팀</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Department 4 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">GovTech 사업부</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">
+                                        GovTech 사업부</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">공공사업기획팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">B2G영업팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">보안컴플라이언스팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">공공사업기획팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">B2G영업팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">보안컴플라이언스팀</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Department 5 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">DX 솔루션 사업부</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">DX
+                                        솔루션 사업부</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">엔터프라이즈SI팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">클라우드전환팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">데이터엔지니어링팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">엔터프라이즈SI팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">클라우드전환팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">데이터엔지니어링팀</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Department 6 -->
-                        <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
-                            <div class="vertical-line" style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);"></div>
-                            <div class="org-node" style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
+                        <div
+                            style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; padding: 0 5px;">
+                            <div class="vertical-line"
+                                style="position: absolute; top: -30px; width: 2px; height: 30px; background: var(--primary-blue);">
+                            </div>
+                            <div class="org-node"
+                                style="width: 100%; padding: 0; overflow: hidden; border: 2px solid var(--primary-blue);">
                                 <div style="background: var(--primary-blue); padding: 12px 5px;">
-                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">CS 안심케어 센터</h4>
+                                    <h4 style="margin: 0; font-size: 1.15rem; color: white; word-break: keep-all;">CS
+                                        안심케어 센터</h4>
                                 </div>
-                                <div style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">고객안심매니지먼트팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">기술지원팀</span>
-                                    <span style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">서비스운영팀</span>
+                                <div
+                                    style="padding: 15px 10px; display: flex; flex-direction: column; gap: 8px; background: var(--white);">
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">고객안심매니지먼트팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">기술지원팀</span>
+                                    <span
+                                        style="font-size: 0.95rem; font-weight: 600; color: var(--text-main); padding: 6px; background: var(--bg-light); border-radius: 4px; border: 1px solid rgba(0,0,0,0.05);">서비스운영팀</span>
                                 </div>
                             </div>
                         </div>
@@ -1048,31 +1374,50 @@
                 <div class="service-grid">
                     <div id="service-si" class="service-card fade-up">
                         <div class="service-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
                         </div>
                         <h4>Enterprise SI / SM</h4>
                         <p>대규모 엔터프라이즈 시스템 통합 및 운영 유지보수. 무중단 시스템 아키텍처 설계와 최적화된 프레임워크를 기반으로 안정적인 기업 IT 환경을 구축합니다.</p>
                     </div>
                     <div id="service-govtech" class="service-card fade-up" style="transition-delay: 0.1s;">
                         <div class="service-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
                         </div>
                         <h4>GovTech 플랫폼</h4>
                         <p>공공기관 및 지자체의 복잡한 행정 절차를 표준화하는 B2G 맞춤형 플랫폼 개발. 높은 보안 등급을 충족하며 행정 효율을 극대화합니다.</p>
                     </div>
                     <div id="service-ai" class="service-card fade-up" style="transition-delay: 0.2s;">
                         <div class="service-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
                         </div>
                         <h4>AI Data Analytics</h4>
                         <p>비정형 데이터 분석, 이미지 객체 인식 등 고도화된 딥러닝 모델 개발. 고객의 비즈니스에 인공지능을 통합하여 데이터 기반의 의사결정을 지원합니다.</p>
                     </div>
                     <div id="service-cloud" class="service-card fade-up" style="transition-delay: 0.3s;">
                         <div class="service-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
                         </div>
                         <h4>Cloud Native Architecture</h4>
-                        <p>AWS, GCP 기반의 클라우드 마이그레이션 및 MSA(Microservices Architecture) 설계. 유연하고 확장 가능한 클라우드 환경을 제공합니다.</p>
+                        <p>AWS, GCP 기반의 클라우드 마이그레이션 및 MSA(Microservices Architecture) 설계. 유연하고 확장 가능한 클라우드 환경을 제공합니다.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1083,7 +1428,7 @@
             <div class="container">
                 <h2 class="section-title fade-up">대표 플랫폼</h2>
                 <p class="section-subtitle fade-up">블랭크온 솔루션즈의 독보적인 기술력이 집약된 혁신적인 솔루션 라인업입니다.</p>
-                
+
                 <div id="product-teukcheong" class="product-showcase fade-up">
                     <div class="product-info">
                         <span class="product-badge">Government Tech Platform</span>
@@ -1098,11 +1443,13 @@
                     </div>
                     <div class="product-mockup">
                         <!-- 요청사항 반영: 사용자가 제공한 특청 이미지로 교체 -->
-                        <img src="https://i.postimg.cc/Xq7CH4VS/hwamyeon-kaebcheo-2026-03-25-145948.png" alt="특청 플랫폼 화면">
+                        <img src="https://i.postimg.cc/Xq7CH4VS/hwamyeon-kaebcheo-2026-03-25-145948.png"
+                            alt="특청 플랫폼 화면">
                     </div>
                 </div>
 
-                <div id="product-control" class="product-showcase fade-up" style="margin-top: 60px; flex-direction: row-reverse;">
+                <div id="product-control" class="product-showcase fade-up"
+                    style="margin-top: 60px; flex-direction: row-reverse;">
                     <div class="product-info">
                         <span class="product-badge">Control System</span>
                         <h3>통합 관제 시스템</h3>
@@ -1113,7 +1460,8 @@
                         </ul>
                     </div>
                     <div class="product-mockup">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="통합 관제 시스템" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop"
+                            alt="통합 관제 시스템" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
                     </div>
                 </div>
 
@@ -1128,7 +1476,8 @@
                         </ul>
                     </div>
                     <div class="product-mockup">
-                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1000&auto=format&fit=crop" alt="데이터 파이프라인" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1000&auto=format&fit=crop"
+                            alt="데이터 파이프라인" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
                     </div>
                 </div>
             </div>
@@ -1146,7 +1495,8 @@
                     </div>
                     <div id="esg-soc" class="service-card fade-up" style="transition-delay: 0.1s;">
                         <h4 style="font-size: 1.6rem;">🤝 Social</h4>
-                        <p style="margin-top: 15px;">GovTech를 통한 행정 효율화로 대국민 서비스 질을 향상시키며, 지역사회 IT 교육 및 정보 격차 해소에 기여합니다.</p>
+                        <p style="margin-top: 15px;">GovTech를 통한 행정 효율화로 대국민 서비스 질을 향상시키며, 지역사회 IT 교육 및 정보 격차 해소에 기여합니다.
+                        </p>
                     </div>
                     <div id="esg-gov" class="service-card fade-up" style="transition-delay: 0.2s;">
                         <h4 style="font-size: 1.6rem;">⚖️ Governance</h4>
@@ -1162,49 +1512,69 @@
                 <h2 class="section-title fade-up">인재채용</h2>
                 <p class="section-subtitle fade-up">블랭크온 솔루션즈와 함께 디지털 혁신을 주도할 인재를 모십니다.</p>
 
-                <div id="recruit-ideal" class="product-showcase fade-up" style="flex-wrap: wrap; flex-direction: row-reverse; gap: 40px; padding: 60px; background: var(--white); box-shadow: var(--shadow-md);">
+                <div id="recruit-ideal" class="product-showcase fade-up"
+                    style="flex-wrap: wrap; flex-direction: row-reverse; gap: 40px; padding: 60px; background: var(--white); box-shadow: var(--shadow-md);">
                     <div class="product-info" style="flex: 1; min-width: 300px;">
                         <h3 style="font-size: 2.2rem;">최고의 동료와 함께<br>성장할 수 있는 환경</h3>
-                        <p>우리는 실패를 두려워하지 않는 도전 정신과, 기술로 세상을 바꿀 수 있다는 믿음을 가진 분들을 찾고 있습니다. 자율과 책임이 주어지는 환경에서 당신의 역량을 마음껏 펼쳐보세요.</p>
+                        <p>우리는 실패를 두려워하지 않는 도전 정신과, 기술로 세상을 바꿀 수 있다는 믿음을 가진 분들을 찾고 있습니다. 자율과 책임이 주어지는 환경에서 당신의 역량을 마음껏
+                            펼쳐보세요.</p>
                         <div style="margin-top: 30px;">
-                            <a href="#recruit-jobs" style="display: inline-block; padding: 15px 30px; background: var(--gradient-primary); color: white; font-weight: bold; border-radius: 8px; box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">채용공고 확인하기 &rarr;</a>
+                            <a href="#recruit-jobs"
+                                style="display: inline-block; padding: 15px 30px; background: var(--gradient-primary); color: white; font-weight: bold; border-radius: 8px; box-shadow: var(--shadow-sm); transition: transform 0.2s ease;">채용공고
+                                확인하기 &rarr;</a>
                         </div>
                     </div>
                     <div class="product-mockup" style="flex: 1; min-width: 300px;">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="인재채용" style="border-radius: 16px; box-shadow: var(--shadow-md); width: 100%;">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+                            alt="인재채용" style="border-radius: 16px; box-shadow: var(--shadow-md); width: 100%;">
                     </div>
                 </div>
 
                 <div id="recruit-jobs" style="padding-top: 80px; margin-top: 40px;">
                     <div style="text-align: center; margin-bottom: 40px;">
                         <h3 style="font-size: 2.2rem; color: var(--primary-blue); font-weight: 800;">진행 중인 채용공고</h3>
-                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">블랭크온 솔루션즈와 함께할 혁신적인 인재를 찾습니다.</p>
+                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">블랭크온 솔루션즈와 함께할 혁신적인
+                            인재를 찾습니다.</p>
                     </div>
-                    <div class="service-card" style="text-align: center; padding: 50px; background: var(--white); border: 2px dashed #ccc; box-shadow: none;">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 20px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-                        <h4 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 10px;">현재 진행 중인 공고가 없습니다</h4>
-                        <p style="color: var(--text-muted); font-size: 1.05rem;">인재풀에 이력서를 등록해주시면, 적합한 포지션 오픈 시 가장 먼저 연락드리겠습니다.</p>
-                        <a href="#support-contact" style="display: inline-block; margin-top: 25px; padding: 12px 30px; background: var(--bg-blue-light); color: var(--primary-blue); border-radius: 8px; font-weight: bold; border: 1px solid var(--light-blue); transition: all 0.3s ease;">인재풀 등록하기</a>
+                    <div class="service-card"
+                        style="text-align: center; padding: 50px; background: var(--white); border: 2px dashed #ccc; box-shadow: none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 20px;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <h4 style="font-size: 1.4rem; color: var(--text-main); margin-bottom: 10px;">현재 진행 중인 공고가 없습니다
+                        </h4>
+                        <p style="color: var(--text-muted); font-size: 1.05rem;">인재풀에 이력서를 등록해주시면, 적합한 포지션 오픈 시 가장 먼저
+                            연락드리겠습니다.</p>
+                        <a href="#support-contact"
+                            style="display: inline-block; margin-top: 25px; padding: 12px 30px; background: var(--bg-blue-light); color: var(--primary-blue); border-radius: 8px; font-weight: bold; border: 1px solid var(--light-blue); transition: all 0.3s ease;">인재풀
+                            등록하기</a>
                     </div>
                 </div>
-                
+
                 <div id="recruit-roles" style="padding-top: 80px; margin-top: 40px;">
                     <div style="text-align: center; margin-bottom: 40px;">
                         <h3 style="font-size: 2.2rem; color: var(--primary-blue); font-weight: 800;">직무소개</h3>
-                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">최고의 전문가로 성장할 수 있는 다양한 직군을 소개합니다.</p>
+                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">최고의 전문가로 성장할 수 있는 다양한
+                            직군을 소개합니다.</p>
                     </div>
                     <div class="service-grid">
                         <div class="service-card fade-up">
                             <h4 style="color: var(--primary-blue); font-size: 1.4rem;">💻 Backend Engineer</h4>
-                            <p style="margin-top: 15px;">대규모 트래픽을 처리하는 분산 시스템과 MSA 아키텍처를 설계하고 개발합니다. 클라우드 환경에서의 성능 최적화에 집중합니다.</p>
+                            <p style="margin-top: 15px;">대규모 트래픽을 처리하는 분산 시스템과 MSA 아키텍처를 설계하고 개발합니다. 클라우드 환경에서의 성능 최적화에
+                                집중합니다.</p>
                         </div>
                         <div class="service-card fade-up" style="transition-delay: 0.1s;">
                             <h4 style="color: var(--primary-blue); font-size: 1.4rem;">📊 Data Scientist</h4>
-                            <p style="margin-top: 15px;">AI 모델링, 비정형 데이터 마이닝 및 시계열 분석을 수행합니다. 데이터 기반의 인사이트로 비즈니스 가치를 창출합니다.</p>
+                            <p style="margin-top: 15px;">AI 모델링, 비정형 데이터 마이닝 및 시계열 분석을 수행합니다. 데이터 기반의 인사이트로 비즈니스 가치를
+                                창출합니다.</p>
                         </div>
                         <div class="service-card fade-up" style="transition-delay: 0.2s;">
                             <h4 style="color: var(--primary-blue); font-size: 1.4rem;">🎨 Product Designer</h4>
-                            <p style="margin-top: 15px;">B2B/B2G 엔터프라이즈 솔루션의 UI/UX를 설계합니다. 복잡한 데이터를 직관적으로 이해할 수 있는 사용자 경험을 만듭니다.</p>
+                            <p style="margin-top: 15px;">B2B/B2G 엔터프라이즈 솔루션의 UI/UX를 설계합니다. 복잡한 데이터를 직관적으로 이해할 수 있는 사용자
+                                경험을 만듭니다.</p>
                         </div>
                     </div>
                 </div>
@@ -1218,24 +1588,35 @@
                 <p class="section-subtitle fade-up">무엇을 도와드릴까요? 블랭크온 솔루션즈는 항상 열려있습니다.</p>
 
                 <div id="support-notice" style="padding-top: 60px; margin-bottom: 60px;">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 10px;">
-                        <h3 style="font-size: 2.2rem; color: var(--primary-blue); font-weight: 800; margin: 0;">공지사항</h3>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 2px solid var(--primary-blue); padding-bottom: 10px;">
+                        <h3 style="font-size: 2.2rem; color: var(--primary-blue); font-weight: 800; margin: 0;">공지사항
+                        </h3>
                         <a href="#" style="color: var(--text-muted); font-size: 1rem; font-weight: 500;">더보기 +</a>
                     </div>
-                    <div style="background: var(--white); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden;">
-                        <div style="display: flex; padding: 25px 30px; border-bottom: 1px solid #eee; transition: background 0.2s ease; cursor: pointer;" onmouseover="this.style.background='#f8fbff'" onmouseout="this.style.background='white'">
-                            <span style="background: var(--primary-blue); color: white; padding: 4px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: bold; margin-right: 25px; height: max-content;">공지</span>
+                    <div
+                        style="background: var(--white); border-radius: 8px; box-shadow: var(--shadow-sm); overflow: hidden;">
+                        <div style="display: flex; padding: 25px 30px; border-bottom: 1px solid #eee; transition: background 0.2s ease; cursor: pointer;"
+                            onmouseover="this.style.background='#f8fbff'" onmouseout="this.style.background='white'">
+                            <span
+                                style="background: var(--primary-blue); color: white; padding: 4px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: bold; margin-right: 25px; height: max-content;">공지</span>
                             <div style="flex: 1;">
-                                <h4 style="font-size: 1.2rem; margin-bottom: 8px; color: var(--text-main);">블랭크온 솔루션즈 내부 시스템 정기 점검 안내</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">안정적인 서비스 제공을 위한 정기 점검이 진행될 예정입니다.</p>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 8px; color: var(--text-main);">블랭크온 솔루션즈 내부
+                                    시스템 정기 점검 안내</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">안정적인 서비스 제공을 위한 정기 점검이 진행될 예정입니다.
+                                </p>
                             </div>
                             <span style="color: #999; font-size: 0.95rem;">2026.05.20</span>
                         </div>
-                        <div style="display: flex; padding: 25px 30px; border-bottom: 1px solid #eee; transition: background 0.2s ease; cursor: pointer;" onmouseover="this.style.background='#f8fbff'" onmouseout="this.style.background='white'">
-                            <span style="background: var(--light-blue); color: white; padding: 4px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: bold; margin-right: 25px; height: max-content;">안내</span>
+                        <div style="display: flex; padding: 25px 30px; border-bottom: 1px solid #eee; transition: background 0.2s ease; cursor: pointer;"
+                            onmouseover="this.style.background='#f8fbff'" onmouseout="this.style.background='white'">
+                            <span
+                                style="background: var(--light-blue); color: white; padding: 4px 14px; border-radius: 4px; font-size: 0.9rem; font-weight: bold; margin-right: 25px; height: max-content;">안내</span>
                             <div style="flex: 1;">
-                                <h4 style="font-size: 1.2rem; margin-bottom: 8px; color: var(--text-main);">GovTech 플랫폼 v2.0 업데이트 안내</h4>
-                                <p style="color: var(--text-muted); font-size: 1rem;">특청 솔루션의 새로운 기능과 UI 개편 사항을 안내해 드립니다.</p>
+                                <h4 style="font-size: 1.2rem; margin-bottom: 8px; color: var(--text-main);">GovTech 플랫폼
+                                    v2.0 업데이트 안내</h4>
+                                <p style="color: var(--text-muted); font-size: 1rem;">특청 솔루션의 새로운 기능과 UI 개편 사항을 안내해
+                                    드립니다.</p>
                             </div>
                             <span style="color: #999; font-size: 0.95rem;">2026.05.15</span>
                         </div>
@@ -1245,24 +1626,46 @@
                 <div id="support-pr" style="padding-top: 60px; margin-bottom: 80px;">
                     <div style="text-align: center; margin-bottom: 40px;">
                         <h3 style="font-size: 2.2rem; color: var(--primary-blue); font-weight: 800;">홍보센터 / PR</h3>
-                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">블랭크온 솔루션즈의 브랜드 에셋과 보도자료를 확인하세요.</p>
+                        <p style="color: var(--text-muted); font-size: 1.15rem; margin-top: 10px;">블랭크온 솔루션즈의 브랜드 에셋과
+                            보도자료를 확인하세요.</p>
                     </div>
                     <div class="service-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                         <div class="service-card fade-up" style="text-align: center; padding: 50px 40px;">
-                            <div style="width: 72px; height: 72px; background: var(--bg-blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: var(--primary-blue);">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <div
+                                style="width: 72px; height: 72px; background: var(--bg-blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: var(--primary-blue);">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
                             </div>
                             <h4 style="font-size: 1.5rem; color: var(--text-main);">보도자료</h4>
-                            <p style="margin-top: 15px; color: var(--text-muted); font-size: 1.05rem;">언론에 보도된 블랭크온의 최신 소식을 모아보실 수 있습니다.</p>
-                            <a href="#" style="display: inline-block; margin-top: 25px; font-weight: bold; color: var(--primary-blue); font-size: 1.1rem;">보도자료 바로가기 &rarr;</a>
+                            <p style="margin-top: 15px; color: var(--text-muted); font-size: 1.05rem;">언론에 보도된 블랭크온의 최신
+                                소식을 모아보실 수 있습니다.</p>
+                            <a href="#"
+                                style="display: inline-block; margin-top: 25px; font-weight: bold; color: var(--primary-blue); font-size: 1.1rem;">보도자료
+                                바로가기 &rarr;</a>
                         </div>
-                        <div class="service-card fade-up" style="text-align: center; padding: 50px 40px; transition-delay: 0.1s;">
-                            <div style="width: 72px; height: 72px; background: var(--bg-blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: var(--primary-blue);">
-                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <div class="service-card fade-up"
+                            style="text-align: center; padding: 50px 40px; transition-delay: 0.1s;">
+                            <div
+                                style="width: 72px; height: 72px; background: var(--bg-blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; color: var(--primary-blue);">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
                             </div>
                             <h4 style="font-size: 1.5rem; color: var(--text-main);">CI / 로고 다운로드</h4>
-                            <p style="margin-top: 15px; color: var(--text-muted); font-size: 1.05rem;">블랭크온 솔루션즈의 공식 로고 및 브랜드 가이드라인입니다.</p>
-                            <a href="#" style="display: inline-block; margin-top: 25px; font-weight: bold; color: var(--primary-blue); font-size: 1.1rem;">다운로드 (ZIP) &rarr;</a>
+                            <p style="margin-top: 15px; color: var(--text-muted); font-size: 1.05rem;">블랭크온 솔루션즈의 공식 로고
+                                및 브랜드 가이드라인입니다.</p>
+                            <a href="#"
+                                style="display: inline-block; margin-top: 25px; font-weight: bold; color: var(--primary-blue); font-size: 1.1rem;">다운로드
+                                (ZIP) &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -1270,12 +1673,15 @@
                 <div class="about-grid fade-up" style="gap: 40px; margin-bottom: 0;">
                     <div id="support-location" class="service-card" style="text-align: center; padding: 50px 30px;">
                         <h4 style="font-size: 1.6rem; color: var(--primary-blue);">📍 찾아오시는 길</h4>
-                        <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-main); font-weight: 500;">광주광역시 북구 일곡마을로<br>블랭크온 솔루션즈 본사</p>
+                        <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-main); font-weight: 500;">광주광역시
+                            북구 일곡마을로<br>블랭크온 솔루션즈 본사</p>
                     </div>
                     <div id="support-contact" class="service-card" style="text-align: center; padding: 50px 30px;">
                         <h4 style="font-size: 1.6rem; color: var(--primary-blue);">📞 문의하기</h4>
-                        <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-main); font-weight: 500;">대표전화 : 1800-1975<br>이메일: master@blankonsolutions.com</p>
-                        <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.95rem;">운영시간 : 평일 09:00 ~ 18:00 (주말/공휴일 휴무)</p>
+                        <p style="margin-top: 15px; font-size: 1.1rem; color: var(--text-main); font-weight: 500;">대표전화
+                            : 1800-1975<br>이메일: master@blankonsolutions.com</p>
+                        <p style="margin-top: 10px; color: var(--text-muted); font-size: 0.95rem;">운영시간 : 평일 09:00 ~
+                            18:00 (주말/공휴일 휴무)</p>
                     </div>
                 </div>
             </div>
@@ -1287,7 +1693,8 @@
             <div class="footer-grid">
                 <div class="footer-info fade-up">
                     <div class="footer-logo">
-                        <h2 style="color: white; font-size: 1.8rem; letter-spacing: -0.05em; font-weight: 800;">BLANKON SOLUTIONS</h2>
+                        <h2 style="color: white; font-size: 1.8rem; letter-spacing: -0.05em; font-weight: 800;">BLANKON
+                            SOLUTIONS</h2>
                     </div>
                     <p>블랭크온 솔루션즈 주식회사</p>
                     <p>광주광역시 북구 일곡마을로</p>
@@ -1352,10 +1759,10 @@
 
             function showSlide(n) {
                 if (!slides.length) return;
-                
+
                 slides.forEach(slide => slide.classList.remove('active'));
                 dots.forEach(dot => dot.classList.remove('active'));
-                
+
                 slideIndex = n;
                 if (slideIndex >= slides.length) slideIndex = 0;
                 if (slideIndex < 0) slideIndex = slides.length - 1;
@@ -1420,4 +1827,5 @@
         });
     </script>
 </body>
+
 </html>
