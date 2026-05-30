@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (localStorage.getItem('prefer-pc-version') === 'true') {
+            document.getElementById('viewportMeta').setAttribute('content', 'width=1200');
+        }
+    </script>
     <title>BLANKON SOLUTIONS | 대한민국 대표 IT 솔루션 기업</title>
     <meta name="description" content="블랭크온 솔루션즈는 공공기관과 민간 기업의 디지털 혁신을 선도하는 엔터프라이즈 IT 솔루션 및 GovTech 전문 기업입니다.">
     <link rel="stylesheet" as="style" crossorigin
@@ -714,6 +719,32 @@
             font-size: 0.95rem;
         }
 
+        /* PC Version Button */
+        .pc-view-btn {
+            display: none;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .pc-view-btn:hover {
+            border-color: var(--white);
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Swipe Hint for mobile */
+        .org-swipe-hint {
+            display: none;
+        }
+
         /* --- Mobile Menu & Responsive Design --- */
         .mobile-menu-btn {
             display: none;
@@ -908,75 +939,121 @@
             .ceo-text p {
                 font-size: 1rem;
                 line-height: 1.6;
+            }            /* Organization Chart Mobile Optimization: Horizontal Scroll Tree */
+            .org-chart-outer-wrapper {
+                width: 100%;
+                position: relative;
+                margin-top: 40px;
             }
-
-            /* Organization Chart Mobile Optimization */
+            .org-chart-scroll-container {
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding: 20px 5px 15px 5px;
+            }
+            .org-chart-scroll-container::-webkit-scrollbar {
+                height: 6px;
+            }
+            .org-chart-scroll-container::-webkit-scrollbar-track {
+                background: rgba(0, 86, 179, 0.05);
+                border-radius: 10px;
+            }
+            .org-chart-scroll-container::-webkit-scrollbar-thumb {
+                background: var(--light-blue);
+                border-radius: 10px;
+            }
             .org-chart {
-                margin-top: 20px;
+                min-width: 1100px; /* Force desktop width to preserve layout and lines */
+                margin: 0 auto !important;
+                padding-bottom: 10px;
             }
-            .org-level::before, .org-level.multi::after, .org-level-item::before {
-                display: none !important; 
-            }
+            /* Ensure the desktop layout and connection lines are preserved on mobile */
             .org-chart-row {
-                flex-direction: column !important;
-                gap: 15px !important;
-                padding-top: 0 !important;
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 0 !important;
+                padding-top: 30px !important;
             }
             .org-chart-row > div {
-                width: 100% !important;
-                padding: 0 !important;
-                margin-top: 15px;
-                position: relative;
+                width: auto !important;
+                flex: 1 !important;
+                margin-top: 0 !important;
             }
-            /* 부서 간 연결을 시각화하기 위해 중앙 도트선 추가 */
-            .org-chart-row > div::before {
-                content: '';
-                position: absolute;
-                top: -15px;
-                left: 50%;
-                width: 2px;
-                height: 15px;
-                background-color: var(--primary-blue);
-                transform: translateX(-50%);
+            .org-chart-row .horizontal-line {
+                display: block !important;
             }
-            .org-chart-row .horizontal-line, .org-chart-row .vertical-line, .vertical-line-ceo {
-                display: none !important;
+            .org-chart-row .vertical-line {
+                display: block !important;
+            }
+            .vertical-line-ceo {
+                display: block !important;
             }
             .ceo-row {
-                flex-direction: column !important;
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: center !important;
                 align-items: center !important;
-                gap: 15px !important;
-                width: 100%;
+                width: 100% !important;
             }
             .ceo-row .org-node {
-                width: 100%;
-                max-width: 320px;
+                width: auto !important;
+                min-width: 260px !important;
             }
             .audit-wrapper {
-                position: static !important;
-                transform: none !important;
-                margin-top: 10px !important;
-                justify-content: center !important;
-                width: 100%;
+                position: absolute !important;
+                left: 50% !important;
+                top: 50% !important;
+                transform: translate(130px, -50%) !important;
+                margin-top: 0 !important;
+                width: auto !important;
+                display: flex !important;
             }
             .audit-wrapper .org-node {
-                width: 100%;
-                max-width: 200px;
+                width: auto !important;
+                min-width: auto !important;
             }
             .audit-line {
-                display: none !important;
+                display: block !important;
             }
-            /* 부서 내부 팀 리스트 2열 그리드로 정렬하여 세로 높이 축소 */
-            .org-node div[style*="display: flex"] {
-                display: grid !important;
-                grid-template-columns: repeat(2, 1fr) !important;
-                gap: 6px !important;
-                padding: 12px 8px !important;
+            
+            /* Modern Scroll Hint Alert Box for Mobile */
+            .org-swipe-hint {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                margin: 0 auto 20px;
+                padding: 10px 18px;
+                background: var(--bg-blue-light);
+                border: 1.5px solid rgba(0, 86, 179, 0.15);
+                color: var(--primary-blue);
+                border-radius: 30px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                width: max-content;
+                box-shadow: var(--shadow-sm);
+                animation: hintPulse 2.0s infinite ease-in-out;
             }
-            .org-node div[style*="display: flex"] span {
-                font-size: 0.85rem !important;
-                padding: 8px 4px !important;
-                margin: 0 !important;
+            
+            @keyframes hintPulse {
+                0%, 100% {
+                    transform: scale(1);
+                    box-shadow: var(--shadow-sm);
+                }
+                50% {
+                    transform: scale(1.02);
+                    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.1);
+                    background-color: #e6f2ff;
+                }
+            }
+
+            .org-swipe-hint svg {
+                animation: swipeMove 1.6s infinite ease-in-out;
+            }
+
+            @keyframes swipeMove {
+                0%, 100% { transform: translateX(0); }
+                50% { transform: translateX(-4px); }
             }
 
             /* Services */
@@ -1176,7 +1253,17 @@
                 <h2 class="section-title fade-up">조직도</h2>
                 <p class="section-subtitle fade-up">체계적이고 전문적인 조직 구성을 통해 최고의 IT 서비스를 제공합니다.</p>
 
-                <div class="org-chart fade-up" style="position: relative; max-width: 1200px; margin: 60px auto 0;">
+                <div class="org-chart-outer-wrapper fade-up">
+                    <div class="org-swipe-hint">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;">
+                            <polyline points="7 8 3 12 7 16"></polyline>
+                            <polyline points="17 8 21 12 17 16"></polyline>
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                        </svg>
+                        <span>좌우로 스크롤하여 전체 조직도를 확인하실 수 있습니다.</span>
+                    </div>
+                    <div class="org-chart-scroll-container">
+                        <div class="org-chart" style="position: relative; max-width: 1200px; margin: 60px auto 0;">
 
                     <!-- Top Row: CEO -->
                     <div class="ceo-row"
@@ -1363,7 +1450,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+    </section>
 
         <!-- Services Section -->
         <section id="services" class="services">
@@ -1721,6 +1810,16 @@
                 </div>
             </div>
             <div class="footer-bottom fade-up" style="transition-delay: 0.3s;">
+                <div style="margin-bottom: 15px;">
+                    <button id="pcViewBtn" class="pc-view-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        PC 버전으로 보기
+                    </button>
+                </div>
                 <p>&copy; 2026 BLANKON SOLUTIONS Co., Ltd. All rights reserved.</p>
             </div>
         </div>
@@ -1822,6 +1921,39 @@
                         header.style.boxShadow = 'var(--shadow-sm)';
                         header.style.borderBottom = '2px solid var(--primary-blue)';
                     }
+                });
+            }
+
+            // 5. PC Version Toggle
+            const pcViewBtn = document.getElementById('pcViewBtn');
+            if (pcViewBtn) {
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                const isPCPreference = localStorage.getItem('prefer-pc-version') === 'true';
+                
+                if (isMobile || isPCPreference) {
+                    pcViewBtn.style.display = 'inline-flex';
+                } else {
+                    pcViewBtn.style.display = 'none';
+                }
+                
+                if (isPCPreference) {
+                    pcViewBtn.innerHTML = `
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                        모바일 버전으로 보기
+                    `;
+                }
+                
+                pcViewBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (isPCPreference) {
+                        localStorage.setItem('prefer-pc-version', 'false');
+                    } else {
+                        localStorage.setItem('prefer-pc-version', 'true');
+                    }
+                    window.location.reload();
                 });
             }
         });
